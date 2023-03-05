@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ## Usage
 Download model from https://www.sendbig.com/en/view-files/?Id=d5f7c43d-4ec4-39ed-c908-c4afed5eb091
 
-Uzpip the model to `saveld_model` directory
+Unzip the model to `saved_model` directory
 
 ```python
 from simpletransformers.ner import NERModel, NERArgs
@@ -38,7 +38,7 @@ prediction, raw_outputs = model.predict(["Serce powiększone, niewielka ilość 
 print(prediction)
 ```
 Output:
-```
+```json
 [[{'Serce': 'B-POWIĘKSZENIE_SERCA'}, {'powiększone,': 'I-POWIĘKSZENIE_SERCA'}, {'niewielka': 'B-PŁYN_W_WORKU_OSIERDZIOWYM'}, {'ilość': 'I-PŁYN_W_WORKU_OSIERDZIOWYM'}, {'płynu': 'I-PŁYN_W_WORKU_OSIERDZIOWYM'}, {'w': 'I-PŁYN_W_WORKU_OSIERDZIOWYM'}, {'worku': 'I-PŁYN_W_WORKU_OSIERDZIOWYM'}, {'osierdziowym': 'I-PŁYN_W_WORKU_OSIERDZIOWYM'}]]
 ```
 
