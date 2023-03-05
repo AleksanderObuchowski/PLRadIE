@@ -21,6 +21,10 @@ pip install -r requirements.txt
     https://github.com/whr778/simpletransformers/tree/add-luke-mluke-to-ner
 
 ## Usage
+Download model from https://www.sendbig.com/en/view-files/?Id=d5f7c43d-4ec4-39ed-c908-c4afed5eb091
+
+Uzpip the model to `saveld_model` directory
+
 ```python
 from simpletransformers.ner import NERModel, NERArgs
 
